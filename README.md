@@ -83,6 +83,7 @@ configure_dock: true
 dockitems_remove:
   - Launchpad
   - TV
+  
 dockitems_persist:
   - name: "Sublime Text"
     path: "/Applications/Sublime Text.app/"
@@ -185,3 +186,43 @@ This project was created by [Jeff Geerling](https://www.jeffgeerling.com/) (orig
 
 [badge-gh-actions]: https://github.com/geerlingguy/mac-dev-playbook/workflows/CI/badge.svg?event=push
 [link-gh-actions]: https://github.com/geerlingguy/mac-dev-playbook/actions?query=workflow%3ACI
+
+
+## Notes to myself
+### How to install
+#### Install xcode
+```shell
+xcode-select --install
+```
+#### Create dev dir and clone repo
+```shell
+cd ~
+mkdir -p Dev/MacSetup
+cd Dev/MacSetup
+git clone https://github.com/kamil-baran/mac-dev-playbook.git
+```
+#### Follow instructions defined in installation chapter
+Self explanatory
+#### Install oh-my-zsh
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+#### Sign-in everywhere
+- Spotify
+- Slack
+- Google
+- JetBrains toolbox
+
+#### [Work] Install work dependencies through 'Company Portal' 
+
+#### Upload rest of the personal config files (.ssh, .aws, etc)
+- .ssh
+  * some of the keys need to be copied from cold storage or old machine
+  * copy config_template, update if necessary
+  * generate keys
+- .aws
+- setup kubernetes
+
+#### Clone repositories
+You can use this project to have repositories under version control https://github.com/kamil-baran/git-repos-manager
