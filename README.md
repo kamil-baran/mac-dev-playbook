@@ -189,8 +189,40 @@ This project was created by [Jeff Geerling](https://www.jeffgeerling.com/) (orig
 
 
 ## Notes to myself
+### How to install
+#### Install xcode
+```shell
+xcode-select --install
+```
+#### Create dev dir and clone repo
+```shell
+cd ~
+mkdir -p Dev/MacSetup
+cd Dev/MacSetup
+git clone https://github.com/kamil-baran/mac-dev-playbook.git
+```
+#### Follow instructions defined in installation chapter
+Self explanatory
+#### Install oh-my-zsh
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
-TODO:
-- generate ssh keys and setup keys in github/gitlab
-- install oh-my-zsh
-- configure dock
+#### Sign-in everywhere
+- Spotify
+- Slack
+- Google
+- JetBrains toolbox
+
+#### [Work] Install work dependencies through 'Company Portal' 
+
+#### Upload rest of the personal config files (.ssh, .aws, etc)
+- .ssh
+  * some of the keys need to be copied from cold storage or old machine
+  * copy config_template, update if necessary
+  * generate keys
+- .aws
+- setup kubernetes
+
+#### Clone repositories
+You can use this project to have repositories under version control https://github.com/kamil-baran/git-repos-manager
