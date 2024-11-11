@@ -220,9 +220,43 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 - .ssh
   * some of the keys need to be copied from cold storage or old machine
   * copy config_template, update if necessary
-  * generate keys
+  * generate keys. 
+  * Can be automated but do i need it?
 - .aws
+  * Copy .aws folder to ~/ and it should all work. Can be automated
 - setup kubernetes
+- setup artifactory access (schibsted) 
+  * docker login -u some.user@schibsted.com -p [some-password/API key] containers.schibsted.io
+  * gradle.properties
+  * Can be automated
+
+
 
 #### Clone repositories
 You can use this project to have repositories under version control https://github.com/kamil-baran/git-repos-manager
+
+#### Jetbrains
+Need to install apps manually. Also configurations are not backed up, this is todo
+- configs
+- plugins
+  * Scala plugin
+  * Copyrights
+- datagrip tunnels etc 
+  * can be done automatically?
+#### Java versions installed with brew need to be symlinked 
+```
+==> Caveats
+For the system Java wrappers to find this JDK, symlink it with
+  sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+
+openjdk@11 is keg-only, which means it was not symlinked into /opt/homebrew,
+because this is an alternate version of another formula.
+
+If you need to have openjdk@11 first in your PATH, run:
+  echo 'export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openjdk@11 you may need to set:
+  export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
+```
+
+Symlink manually

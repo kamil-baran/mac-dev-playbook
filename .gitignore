@@ -3,3 +3,6 @@
 *.retry
 roles*
 config.yml
+
+
+.pass
