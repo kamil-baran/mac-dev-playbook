@@ -60,15 +60,9 @@ homebrew_installed_packages:
   - pyenv-virtualenv
   - pre-commit
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
-  - homebrew/cask-versions
-
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - anki
-  - cheatsheet
   - chromedriver
   - docker
   - firefox
