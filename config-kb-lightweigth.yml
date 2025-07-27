@@ -33,7 +33,7 @@ dockitems_persist:
     path: "/Applications/Kindle.app"
   
 
-dotfiles_repo: https://github.com/kamil-baran/dotfiles.git
+dotfiles_repo: git@github.com:kamil-baran/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Dev/MacSetup/dotfiles
 # Would be easier to link just all files in dir
