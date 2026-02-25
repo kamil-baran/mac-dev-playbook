@@ -60,6 +60,7 @@ homebrew_installed_packages:
   - pyenv-virtualenv
   - pre-commit
   - pipx
+  - pandoc
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -81,4 +82,7 @@ homebrew_cask_apps:
   - vlc
   - cursor
   - discord
+  - claude-code
+  - ghostty
+
 
